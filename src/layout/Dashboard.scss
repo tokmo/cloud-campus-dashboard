@@ -1,0 +1,11 @@
+@import '../assets/scss/styles.scss';
+
+.dashboardLayout{
+
+	.content{
+		background:orange;
+		margin-left:$sidebarMainWidth;
+		margin-top:$navbarMainHeight;
+
+	}
+}
