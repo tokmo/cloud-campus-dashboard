@@ -1,0 +1,33 @@
+@import "../../assets/scss/styles.scss";
+
+.socialStats{
+
+	.title{
+		display: flex;
+		align-items: flex-end;
+		>h1{
+			color:#1C1F37;
+			line-height: 24px;
+		}
+
+		>h2{
+			display: flex;
+			align-items: center;
+			color:#30D988;
+			margin-left: 5px;
+			>span{
+				color:rgba(28, 31, 55, 0.58);
+				margin-left:2px;
+			}
+			>svg{
+				width: 6px;
+				margin-right: 4px;
+			}
+		}
+
+		>h3{
+
+		}
+	}
+
+}

@@ -1,0 +1,65 @@
+@import "../../assets/scss/styles.scss";
+
+.scheduleDecoOff{
+	border-bottom:unset !important;
+	padding-bottom:unset !important;
+}
+
+.schedule {
+	border-bottom:1px solid #ededed;
+	padding-bottom:16px;
+	> .row1 {
+		display: flex;
+		align-items: flex-start;
+		gap: 8px;
+		> .col1 {
+			.date {
+				padding: 7px 12px;
+				border: 1px solid #ededed;
+				border-radius: 4px;
+				text-align: center;
+
+				> h1 {
+					margin-top: 4px;
+					color: #1c1f37;
+				}
+				> h2 {
+					color: #808080;
+				}
+			}
+		}
+
+		> .col2 {
+			flex: 1;
+
+			> h1 {
+				color: #1c1f37;
+				line-height: 20px;
+			}
+			> h2 {
+				color: #808080;
+				margin-top: 8px;
+			}
+		}
+	}
+
+	> .row2 {
+		margin-top: 14px;
+		display: flex;
+		gap:11px;
+		color: #808080;
+		align-items: center;
+
+		.progressBar{
+			height:4px;
+			width:70px;
+			background:#e7e7e7;
+			border-radius: 1000px;
+
+			.progressBarFull{
+				background:$cyan;
+				height:100%;
+			}
+		}
+	}
+}

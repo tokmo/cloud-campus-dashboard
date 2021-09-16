@@ -1,0 +1,43 @@
+@import '../assets//scss/styles.scss';
+
+.pageHome{
+	display: flex;
+	box-sizing: border-box;
+	padding:20px 55px 55px 55px;
+	gap:40px;
+
+
+	>.left{
+		width:385px;
+		min-width: 385px;
+
+		>.title{
+			>h1{
+				color:#1C1F37;
+			}
+			>h2{
+				color:#6F6F6F;
+				margin-top: 8px;
+			}
+		}
+
+		>.widget{
+			&:nth-child(2){
+				margin-top:21px;
+			}
+			&:nth-child(3){
+				margin-top:33px;
+			}
+
+		}
+
+
+		// background:green;
+		
+	}
+	>.right{
+		flex:1;
+		// background: orange;
+	}
+	
+}
