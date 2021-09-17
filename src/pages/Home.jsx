@@ -3,6 +3,7 @@ import React from "react";
 import Widget from "../components/common/Widget";
 import SchedulesList from "../components/home/SchedulesList";
 import SocialStats from "../components/home/SocialStats";
+import LineChart from "../components/home/LineChart";
 
 const Home = () => {
 	return (
@@ -24,7 +25,13 @@ const Home = () => {
 				</Widget>
 			</div>
 
-			<div className="right"></div>
+			<div className="right">
+
+				<div className="widgetTransparent">
+					<LineChart />
+				</div>
+
+			</div>
 		</div>
 	);
 };

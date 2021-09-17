@@ -5,6 +5,9 @@
 	box-sizing: border-box;
 	padding:20px 55px 55px 55px;
 	gap:40px;
+	max-width: 1400px;
+	margin-left: auto;
+	margin-right: auto;
 
 
 	>.left{
@@ -38,6 +41,11 @@
 	>.right{
 		flex:1;
 		// background: orange;
+
+		>.widgetTransparent{
+
+			// background:orange;
+		}
 	}
 	
 }

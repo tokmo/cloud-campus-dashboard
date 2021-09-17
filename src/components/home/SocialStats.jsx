@@ -25,6 +25,8 @@ const SocialStats = () => {
 		},
 	]);
 
+
+
 	useEffect(() => {
 		const datasUpdate = [...datas];
 		let total = 0;
