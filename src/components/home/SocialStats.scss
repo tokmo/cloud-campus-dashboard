@@ -30,4 +30,20 @@
 		}
 	}
 
+	>.statBar{
+		height:8px;
+		border-radius: 100px;
+
+	
+
+		display: flex;
+		gap:2px;
+		overflow:hidden;
+		margin-top: 25px;
+
+		>.bar{
+			height:100%;
+		}
+	}
+
 }

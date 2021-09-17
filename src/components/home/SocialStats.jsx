@@ -6,18 +6,22 @@ const SocialStats = () => {
 		{
 			name: "facebook",
 			visitors: 50,
+			color:'#017EFA'
 		},
 		{
 			name: "instagram",
 			visitors: 124,
+			color:"#FD1F9B"
 		},
 		{
 			name: "linkedin",
 			visitors: 245,
+			color:"#007AB5"
 		},
 		{
 			name: "youtube",
 			visitors: 22,
+			color:"#FF0000"
 		},
 	]);
 
@@ -60,8 +64,35 @@ const SocialStats = () => {
 					12%<span className="w400">visit</span>
 				</h2>
 			</div>
+
+			<StatBar datas={datas} />
+
 		</div>
 	);
 };
+
+
+const StatBar = ({datas}) => {
+	return (
+		<div className="statBar">
+
+			{
+				datas.map((data, i) => (
+					<div 
+						key={i}
+						className="bar"
+						style={{
+							background: data.color,
+							flex: data.percent
+						}}
+					>
+
+					</div>
+				))
+			}
+
+		</div>
+	)
+}
 
 export default SocialStats;
